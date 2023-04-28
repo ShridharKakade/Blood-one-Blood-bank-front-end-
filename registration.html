@@ -1,0 +1,97 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Donor Registration </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style-min.css">
+</head>  
+<body>  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<center>
+<form name="myform" action="thankyou.html" onsubmit="return validateForm()">
+        <table>
+            <tr>
+                <td>
+                    <label>First Name* :
+                            <input class="form-control" type="text" id="fname" placeholder="First Name" tabindex="1" required>
+                    </label> &nbsp;&nbsp;&nbsp;
+                        <label>Last Name* :
+                                <input class="form-control" type="text" id="lname" placeholder="Last Name" tabindex="2" required>
+                        </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Age* :
+                            <input class="form-control" type="number" id="age" placeholder="Age" tabindex="3" required>
+                    </label>&nbsp;&nbsp;&nbsp;
+                        <label>Gender* :
+                                <input type="radio" id="female" name="gender" tabindex="4">Female</label>
+                        <input type="radio" id="male" name="gender" tabindex="5">Male
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Height(in cms)* :
+                            <input class="form-control" type="number" id="height" placeholder="Height" tabindex="6" required>
+                    </label>&nbsp;&nbsp;&nbsp;
+                        <label>Weight(in Kgs)* :
+                                <input class="form-control" type="number" id="weight" placeholder="Weight" tabindex="7" required>
+                        </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Phone No* :
+                            <input class="form-control" type="number" id="phone" maxlength="10" tabindex="8" placeholder="Contact No" required>
+                    </label><br>
+                    <label>Blood Group* :</label>
+                            <select class="form-control" id="bloodgrplist" tabindex="9" required>
+                                <option selected>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                            </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Address :</label>
+                        <textarea class="form-control" id="address" tabindex="10" placeholder="Type your address here"></textarea>
+                        <label>Email* :</label>
+                                <input class="form-control" type="text" id="email" placeholder="Email" required>
+              </td>
+            </tr>
+            <tr>
+                <td><label>Habits* :</label>
+                        <input type="checkbox" name="chk" tabindex="11" id="bttn">I smoke a lot &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk" tabindex="12" id="bttn">I drink a lot &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk" tabindex="13" id="bttn">None
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Pincode* :
+                            <input class="form-control" type="number" id="pin" tabindex="14" min="0" placeholder="pincode">
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <div class="buttn">
+            <input type="submit" id="mySubmit" value="Submit" tabindex="15" class="registerbtn"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Reset" tabindex="16" class="registerbtn">
+        </div>
+        <br>
+        <br>
+        <h6>* indicates required fields</h6>
+    </form>
+    </center>
+</body>  
+</html>  

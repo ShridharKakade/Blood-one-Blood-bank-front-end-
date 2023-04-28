@@ -1,0 +1,154 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: white;  
+}  
+.container {  
+  padding: 50px;  
+  background-color: white;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block; 
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {    
+  outline: none;  
+}  
+input[type=number], input[type=number]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  }
+  input[type=email], input[type=email]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  }
+  input[type=number]:focus, input[type=number]:focus {
+    outline: none;
+      }
+ div {  
+            padding: 10px 0;  
+      }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #F90934;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 20%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body style="background-image: url('"); background-size: cover;"> 
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark danger-color">
+        <a class="navbar-brand" href="#"><strong>OneBlood</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="OneBlood.html">Home</a>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+          </div>
+    </nav>
+ 
+  <script src="alert.js">
+</script>
+<center>
+<form name="myform" action="thankyou.html" onSubmit="return validateForm()">
+  
+  <center> <h1 style="padding:10px">Blood Request Form</h1></center> 
+
+  <hr>  
+        <table>
+            <tr>
+                <td>
+                    <label>First Name* :
+                            <input class="form-control" type="text" id="fname" placeholder="First Name" tabindex="1" required>
+                    </label>&nbsp;&nbsp; &nbsp;&nbsp;
+                        <label>Last Name* :
+                                <input class="form-control" type="text" id="lname" placeholder="Last Name" tabindex="2" required>
+                        </label>
+                </td>
+            
+               
+            </tr>
+            <tr>
+                <td>
+                    <label>Phone No* :
+                            <input class="form-control" type="number" id="phone" maxlength="10" tabindex="8" placeholder="Contact No" required>
+                    </label><br>
+                    <label>Blood Group* :</label>
+                            <select class="form-control" id="bloodgrplist" tabindex="9" required>
+                                <option selected>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                            </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Address :</label>
+                        <textarea class="form-control" id="address" tabindex="10" placeholder="Type your address here"></textarea>
+                        <label>Email* :</label>
+                                <input class="form-control" type="gmail" id="email" placeholder="Email" required>
+            	</td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label>Pincode :
+                            <input class="form-control" type="number" id="pin" tabindex="14" placeholder="pincode">
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <div>
+  <button type="submit" class="registerbtn" onClick="myFunction()" value="send message">Submit</button>   
+   <button type="reset" value="Reset" class="registerbtn">Reset</button> 
+</div>
+
+        <br>
+        <br>
+        <h6>* indicates required fields</h6>
+    </form>
+	</center>
+</body>  
+</html>  
